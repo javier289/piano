@@ -3,6 +3,7 @@ import { useRoutes, Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 import PianoTranscriber from "./pages/PianoTranscriber";
 import routes from "tempo-routes";
+import BeautifulPiano from './components/BeautifulPiano';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         </div>
       }
     >
+      <BeautifulPiano />
       <>
         {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
         <Routes>
